@@ -43,7 +43,7 @@ const ProductListings = () => {
       <h1>Products: </h1>
       {products.map((product) => (
         <div className="job-preview" key={product._id}>
-            <Link to={`/products/${product._id}`}>
+            <Link to={`/edit-product/${product._id}`}>
               <h2>{product.title}</h2>
             </Link>
             <p>Type: {product.type}</p>

@@ -12,7 +12,7 @@ app.use(express.json());
 
 connectDB();
  
-// Use the jobRouter for all "/products" routes
+// Use the productRouter for all "/products" routes
 app.use("/api/products", productRouter);
 
 app.use(unknownEndpoint);
